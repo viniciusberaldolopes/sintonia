@@ -1,0 +1,18 @@
+{
+  "regions": ["gru1"],
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/entrar", "destination": "/index.html" },
+    { "source": "/planos", "destination": "/index.html" },
+    { "source": "/como-jogar", "destination": "/index.html" },
+    { "source": "/jogar", "destination": "/index.html" },
+    { "source": "/sala/:code", "destination": "/index.html" },
+    { "source": "/resultado/:id", "destination": "/api/result-page?id=:id" },
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/admin/:path*", "destination": "/index.html" }
+  ]
+}

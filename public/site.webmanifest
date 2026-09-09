@@ -1,0 +1,13 @@
+{
+  "name": "Mesma Pista",
+  "short_name": "Mesma Pista",
+  "description": "Jogo online multiplayer de perguntas para amigos, casais e grupos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F7FF",
+  "theme_color": "#4C1DFF",
+  "icons": [
+    { "src": "/brand/favicon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/brand/favicon/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
