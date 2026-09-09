@@ -1,17 +1,17 @@
 const projects = [
-  { name: 'Sato7', url: 'https://www.sato7.com.br/', stack: 'PHP + React', tags: ['react'], image: 'sato7.png', tone: 'lime', index: '01' },
-  { name: 'Grupo Isorecort', url: 'https://www.isorecort.com.br/', stack: 'WordPress Theme', tags: ['wordpress'], image: 'isorecort.png', tone: 'blue', index: '02' },
-  { name: 'Perfumaria Sumirê', url: 'https://www.perfumariasumire.com.br', stack: 'Adobe Commerce', tags: ['commerce'], image: 'sumire.png', tone: 'pink', index: '03' },
-  { name: 'Go S7ven', url: 'https://gos7ven.com.br/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'orange', index: '04' },
-  { name: 'CS Seminovos', url: 'https://csseminovosveiculos.com.br/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'blue', index: '05' },
-  { name: 'Doctor AI', url: 'https://site.doctorai.com.br/', stack: 'WordPress Theme', tags: ['wordpress'], tone: 'lime', index: '06' },
-  { name: 'Action 360', url: 'https://www.action360.com.br/seja-um-franqueado/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'pink', index: '07' },
-  { name: 'Kookabu', url: 'https://campanhas.kookabu.com.br/seja-um-franqueado/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'orange', index: '08' },
-  { name: 'Bajaj Brasil', url: 'https://bajaj.com.br/', stack: 'HTML + CSS + JavaScript', tags: ['javascript'], image: 'bajaj.png', tone: 'blue', index: '09' },
-  { name: 'FK Partners', url: 'https://fkpartners.com/', stack: 'WordPress Theme', tags: ['wordpress'], image: 'fkpartners.png', tone: 'lime', index: '10' },
-  { name: 'World Plastic Summit', url: 'https://worldplasticconnectionsummit.com/', stack: 'WordPress + Elementor + Crocoblock', tags: ['wordpress'], image: 'world-plastic.png', tone: 'orange', index: '11' },
-  { name: '9-Box Comercial', url: 'https://9boxcomercial.abeelity.com.br/', stack: 'React + Node.js', tags: ['react', 'javascript'], image: '9box.png', tone: 'pink', index: '12' },
-  { name: 'Sintonia', url: 'https://sintonia-seven.vercel.app/', stack: 'Projeto pessoal · React', tags: ['react'], image: 'sintonia.png', tone: 'lime', index: '13', featured: true },
+  { name: 'Sintonia', url: 'https://sintonia-seven.vercel.app/', stack: 'React', tags: ['react'], image: 'sintonia.png', tone: 'lime', index: '01', featured: true, personal: true },
+  { name: 'Sato7', url: 'https://www.sato7.com.br/', stack: 'PHP + React', tags: ['react'], image: 'sato7.png', tone: 'lime', index: '02' },
+  { name: 'Grupo Isorecort', url: 'https://www.isorecort.com.br/', stack: 'WordPress Theme', tags: ['wordpress'], image: 'isorecort.png', tone: 'blue', index: '03' },
+  { name: 'Perfumaria Sumirê', url: 'https://www.perfumariasumire.com.br', stack: 'Adobe Commerce', tags: ['commerce'], image: 'sumire.png', tone: 'pink', index: '04' },
+  { name: 'Go S7ven', url: 'https://gos7ven.com.br/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'orange', index: '05' },
+  { name: 'CS Seminovos', url: 'https://csseminovosveiculos.com.br/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'blue', index: '06' },
+  { name: 'Doctor AI', url: 'https://site.doctorai.com.br/', stack: 'WordPress Theme', tags: ['wordpress'], tone: 'lime', index: '07' },
+  { name: 'Action 360', url: 'https://www.action360.com.br/seja-um-franqueado/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'pink', index: '08' },
+  { name: 'Kookabu', url: 'https://campanhas.kookabu.com.br/seja-um-franqueado/', stack: 'WordPress + Elementor', tags: ['wordpress'], tone: 'orange', index: '09' },
+  { name: 'Bajaj Brasil', url: 'https://bajaj.com.br/', stack: 'HTML + CSS + JavaScript', tags: ['javascript'], image: 'bajaj.png', tone: 'blue', index: '10' },
+  { name: 'FK Partners', url: 'https://fkpartners.com/', stack: 'WordPress Theme', tags: ['wordpress'], image: 'fkpartners.png', tone: 'lime', index: '11' },
+  { name: 'World Plastic Summit', url: 'https://worldplasticconnectionsummit.com/', stack: 'WordPress + Elementor + Crocoblock', tags: ['wordpress'], image: 'world-plastic.png', tone: 'orange', index: '12' },
+  { name: '9-Box Comercial', url: 'https://9boxcomercial.abeelity.com.br/', stack: 'React + Node.js', tags: ['react', 'javascript'], image: '9box.png', tone: 'pink', index: '13' },
   { name: 'aBeelity', url: 'https://abeelity.app/', stack: 'PHP + JavaScript', tags: ['javascript'], image: 'abeelity.png', tone: 'blue', index: '14' },
 ];
 
@@ -27,6 +27,7 @@ function render(filter = 'all') {
             ? `<img src="/projects/${project.image}" alt="Página inicial do projeto ${project.name}" loading="lazy" />`
             : `<span class="placeholder-name">${project.name}</span>`}
           <span class="project-number">${project.index}</span>
+          ${project.personal ? '<span class="personal-badge">Projeto pessoal</span>' : ''}
           <span class="visit">Visitar ↗</span>
         </div>
         <div class="project-info">
