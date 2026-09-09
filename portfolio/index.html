@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Vinicius Beraldo — desenvolvimento web, e-commerce e experiências digitais." />
+    <meta name="theme-color" content="#10100f" />
+    <title>Vinicius Beraldo — Desenvolvedor Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="nav shell">
+      <a class="brand" href="#top" aria-label="Início">VB<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a class="nav-cta" href="https://github.com/viniciusberaldolopes" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="eyebrow"><span></span> Disponível para novos projetos</div>
+        <h1>Eu transformo<br />ideias em <em>produtos</em><br />digitais.</h1>
+        <div class="hero-bottom">
+          <p>Desenvolvedor web focado em interfaces, experiências e plataformas que funcionam de verdade — do código ao lançamento.</p>
+          <a class="round-link" href="#projetos" aria-label="Ver projetos"><span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Tecnologias">
+        <div>REACT <i>✦</i> WORDPRESS <i>✦</i> JAVASCRIPT <i>✦</i> PHP <i>✦</i> NODE.JS <i>✦</i> ADOBE COMMERCE <i>✦</i> HTML & CSS <i>✦</i></div>
+      </section>
+
+      <section class="work shell" id="projetos">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Trabalhos selecionados</p>
+            <h2>Projetos que<br />ganharam vida.</h2>
+          </div>
+          <p class="counter"><strong>14</strong> projetos<br />selecionados</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="active" data-filter="all">Todos</button>
+          <button data-filter="react">React</button>
+          <button data-filter="wordpress">WordPress</button>
+          <button data-filter="commerce">E-commerce</button>
+          <button data-filter="javascript">JavaScript</button>
+        </div>
+
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="about shell" id="sobre">
+        <p class="kicker">Sobre mim</p>
+        <div class="about-grid">
+          <h2>Estratégia, design<br />e tecnologia no<br />mesmo projeto.</h2>
+          <div>
+            <p>Sou Vinicius Beraldo, desenvolvedor web com experiência em projetos institucionais, e-commerce, landing pages e produtos digitais. Trabalho com diferentes stacks para encontrar a solução certa para cada desafio.</p>
+            <div class="stats">
+              <div><strong>14</strong><span>cases</span></div>
+              <div><strong>7+</strong><span>tecnologias</span></div>
+              <div><strong>100%</strong><span>web</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact shell">
+        <p class="kicker">Tem um projeto em mente?</p>
+        <a href="https://github.com/viniciusberaldolopes" target="_blank" rel="noreferrer">Vamos criar<br />algo juntos. <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <p>© <span id="year"></span> Vinicius Beraldo</p>
+      <p>Desenvolvido com atenção aos detalhes.</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
